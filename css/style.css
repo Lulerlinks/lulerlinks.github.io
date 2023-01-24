@@ -1,8 +1,104 @@
+/* Querido Johnny =D tengo problemas para centrar los elementos, por ejemplo en la botonera tuve que agregar un margin-right:15% para que quedara centrado. No se eso es
+una buena practica porque en cada celu supongo que se vera diferente. Probé de varias formas pero no me tomaba ni justify-content ni justify-items, asi que ojala leas esto
+y puedas resolver mi duda! Besote! 
+*/
+
 body{
+margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+color: whitesmoke;    
+background-color: black; 
+padding: 0;
+}
+
+
+.logo {
+    padding-top: 100px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex   
+
+}
+
+h5 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 12px;  
+    text-align: center;
+    margin:inherit;
+    padding-top: 5px;
+}
+nav{
+    width: 80%;
+    margin:0 auto;
+    padding-top: 6px;
+}
+nav ul{
+text-align: center;
+margin-right: 15%;
+
+}
+
+nav ul li{
+display: inline-block;
+padding-left: 8px;
+}
+
+nav ul li a img{
+    width: 45px;
+}
+
+section{
+    width: 70%;
+    margin:0 auto;  
+}
+
+p{
+text-align: center;
+font-size: 14px;
+padding-bottom: 5px;
+}
+
+.botonera{
+    padding-bottom: 100px;
+}
+.botonera a{
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+    display: block;
+    text-align: center;
+    background-color:#df7c11;
+    border-bottom:solid 3px #a30b65;
+    margin: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+.botonera a:hover {
+    background-color:#a30b65;
     
-height: 100vh;
-display:flex;
-align-items: center;
-justify-content: center;
+}
+
+footer{
+    border-top: solid 5px #df7c11;
+    border-radius: 0px;
+    margin:0 auto;
+    background-image: url(/img/FondoFooter.png);
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+        
+ 
+}
+
+h6{
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    
+
 
 }
