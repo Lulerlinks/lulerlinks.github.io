@@ -1,6 +1,10 @@
 /* Querido Johnny =D tengo problemas para centrar los elementos, por ejemplo en la botonera tuve que agregar un margin-right:15% para que quedara centrado. No se eso es
 una buena practica porque en cada celu supongo que se vera diferente. Probé de varias formas pero no me tomaba ni justify-content ni justify-items, asi que ojala leas esto
 y puedas resolver mi duda! Besote! 
+-------UPDATE
+Vi la Jam y ya resolvi el problema del margin =) Tambien me hizo querer cambiar toda la estructura del index pero preferi mantenerlo como lo habia hecho, ajustando lo que
+no era 100% responsive y ver que correcciones habia al respecto. 
+Gracias Jony!
 */
 
 body{
@@ -14,30 +18,38 @@ padding: 0;
 
 
 .logo {
-    padding-top: 100px;
-    width: 60%;
+    padding-top: 30px;
+    width: 260px;
     margin: 0 auto;
-    display: flex   
+    display: flex;  
 
+}
+header{
+    padding: 0;
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 h5 {
-    width: 100%;
-    font-weight: 800;
+   margin: 10px;
+   font-weight: 800;
     font-size: 12px;  
     text-align: center;
-    margin:inherit;
-    padding-top: 5px;
-}
+    
+   }
+
 nav{
     width: 80%;
     margin:0 auto;
     padding-top: 6px;
 }
+
 nav ul{
 text-align: center;
 margin-right: 15%;
-
+padding: 0;
+max-width: 360px;
+margin: 0 auto;
 }
 
 nav ul li{
@@ -56,18 +68,27 @@ section{
 
 p{
 text-align: center;
-font-size: 14px;
-padding-bottom: 5px;
+font-size: 12px;
+padding: 0;
+max-width: 360px;
+margin: 0 auto;
+margin-top: 15px;
 }
 
 .botonera{
-    padding-bottom: 100px;
+padding: 0px;
+padding-top: 5px;
+padding-bottom: 60px;
+max-width: 300px;
+margin: 0 auto;
+
 }
+
 .botonera a{
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
     color:white;
-    display: block;
+    display: block;    
     text-align: center;
     background-color:#df7c11;
     border-bottom:solid 3px #a30b65;
@@ -86,8 +107,8 @@ footer{
     border-radius: 0px;
     margin:0 auto;
     background-image: url(/img/FondoFooter.png);
-    min-height: 100px;
-    width: 100%;
+    min-height: 25vh;
+    width:100;
     text-align: center;
         
  
