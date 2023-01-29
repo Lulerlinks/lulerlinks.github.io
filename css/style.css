@@ -112,7 +112,7 @@ footer{
     border-radius: 0px;
     margin:0 auto;
     background-image: url(/img/FondoFooter.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     height: 230px;
     width:100%;
     text-align: center;
