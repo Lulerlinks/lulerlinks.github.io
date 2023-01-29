@@ -5,6 +5,9 @@ y puedas resolver mi duda! Besote!
 Vi la Jam y ya resolvi el problema del margin =) Tambien me hizo querer cambiar toda la estructura del index pero preferi mantenerlo como lo habia hecho, ajustando lo que
 no era 100% responsive y ver que correcciones habia al respecto. 
 Gracias Jony!
+UPDATE Ultimo ( I hope so)
+Subi la web al link pero por mi celu se ve re distinto asi que ajuste tamaños y tipografia en relación a como lo veo en el celu
+Beso!
 */
 
 body{
@@ -69,7 +72,7 @@ section{
 
 p{
 text-align: center;
-font-size: 14px;
+font-size: 18px;
 padding: 0;
 max-width: 360px;
 margin: 0 auto;
@@ -81,21 +84,21 @@ margin-top: 15px;
 padding: 0px;
 padding-top: 8px;
 padding-bottom: 70px;
-max-width: 300px;
+max-width: 350px;
 margin: 0 auto;
 
 }
 
 .botonera a{
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     color:white;
     display: block;    
     text-align: center;
     background-color:#df7c11;
-    border-bottom:solid 3px #a30b65;
+    border-bottom:solid 5px #a30b65;
     margin: 20px;
-    padding: 12px 5px 12px 5px;
+    padding: 14px 5px 14px 5px;
     border-radius: 5px;
 }
 
@@ -109,8 +112,9 @@ footer{
     border-radius: 0px;
     margin:0 auto;
     background-image: url(/img/FondoFooter.png);
-    height: 300px;
-    width:100;
+    background-repeat: no-repeat;
+    height: 230px;
+    width:100%;
     text-align: center;
         
  
@@ -120,8 +124,7 @@ h6{
     font-weight: 500;
     width: 100%;
     text-align: center;
-    font-size: 10px;
-    
+    font-size: 14px; 
 
 
 }
