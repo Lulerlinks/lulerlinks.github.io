@@ -111,7 +111,7 @@ footer{
     border-top: solid 5px #df7c11;
     border-radius: 0px;
     margin:0 auto;
-    background-image: url(/img/FondoFooter.png);
+    background-color: #a30b65;
     background-repeat: repeat-x;
     height: 230px;
     width:100%;

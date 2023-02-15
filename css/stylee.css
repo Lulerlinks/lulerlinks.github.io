@@ -1,0 +1,238 @@
+body{
+    background-color: #202124;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+
+}
+
+
+
+header{
+
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content:flex-end;
+    
+
+}
+
+li{
+    display: inline-block;
+    align-items: end;
+    padding: 10px;
+    font-size: 13px;
+ 
+
+   
+        
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+
+li a:hover{
+    text-decoration: underline;
+    
+
+}
+ 
+li a:active{
+    color: blueviolet;
+    
+
+}
+
+
+
+.path {
+ 
+    width: 20px;
+}
+
+.path a {
+padding: 0%;
+margin: 0%; 
+
+}
+
+.perfil{
+    width: 30px;
+
+}
+
+section{
+    
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+section img{
+width: 270px;
+padding-bottom:10px;
+
+}
+
+.form{
+display: flex;
+flex-direction: row;
+background-color:#202124;
+border: solid 1px #5f6368;
+color:gainsboro;
+align-items: center;
+justify-content: center;
+display: flex;
+height: 24px;
+background: #202124;
+border: 1px solid #5f6368;
+box-shadow: none;
+border-radius: 24px;
+margin: 0 auto;
+width: 638px;
+max-width: 584px;
+
+margin: 20px 0;
+padding: 10px; 
+
+
+/*    transition: all 0.3s ease-in;
+
+    position: relative;*/
+
+}
+
+.form:hover{
+background-color: #313235;
+}
+
+.lupita{
+    width: 26px;
+    height: 26px;
+    padding-left: 10px;
+    fill:#bdc1c6;
+    
+}
+.botones{
+    margin-bottom: 10px;
+   
+    
+}
+
+.barra{
+    padding-left: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #9aa0a6;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+.barra:active{
+border-color: red;
+
+}
+.botones input{
+    padding: 10px 16px;
+    border-radius: 4px;
+    background: #303134;
+    color: gainsboro;
+    border: solid 1px #303134;
+    margin:10px;
+    font-size: 14px;  
+    
+}
+
+.botones input:hover{
+
+    color: gainsboro;
+    border: solid 1px gainsboro;
+        
+}
+
+.accesorios{
+    display: flex;
+    padding:16px;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+
+}
+
+
+.mic{
+    
+    width: 23px;
+    padding-right: 10px;
+   
+    
+}
+.cam{
+    width:23px;
+    padding-bottom: 0px;
+  
+}
+
+p{
+    font-size: 13px;
+ 
+}
+
+p a{
+    color:#8ab4f8;
+}
+
+footer{
+    background: #171717;
+    color: #9aa0a6;
+}
+
+.f-unico{ 
+   
+     border-bottom: 1px solid #3c4043;
+     font-size: 15px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     padding: 15px 30px;
+    }
+
+.legales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.legales a{
+    color:  #999da2;
+    font-size: 15px; 
+    text-decoration: none;
+    padding-left: 15px;
+}
+
