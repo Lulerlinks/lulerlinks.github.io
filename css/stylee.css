@@ -73,13 +73,16 @@ margin: 0%;
 
 }
 
-.perfil{
-    width: 30px;
-
+.path:hover{
+    background-color:#313235;
+   
 }
 
-section{
-    
+.perfil{
+    width: 30px;
+}
+
+section{    
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -125,6 +128,27 @@ padding: 10px;
 .form:hover{
 background-color: #313235;
 }
+
+
+.menu-expansible {
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    padding: 12px;
+    width: 328px;
+    height: 400px;
+    background-color: #333438;
+    display: none;
+    
+  }
+
+  .menu-expansible:active {
+ 
+    display: block;
+    
+  }
 
 .lupita{
     width: 26px;

@@ -17,15 +17,23 @@
     <header>
             <nav>
                 <ul>
-                     <li><a href="">Gmail</a></li>
-                     <li><a href="">Imágenes</a></li>
-                     <li><a  href=""><img src="img/apps_FILL1_wght700_GRAD200_opsz48-01.png" alt="apps" class="path"></a></li> 
-                     <li><a href=""><img src="img/fotos-01.png" alt="foto de perfil" class="perfil"></a></li>        
+                     <li><a href="#">Gmail</a></li>
+                     <li><a href="#">Imágenes</a></li>
+                     <li><a  href="#" id="btn-chocolat"><img src="img/apps_FILL1_wght700_GRAD200_opsz48-01.png" alt="apps" class="path"></a></li> 
+                     <li><a href="#"><img src="img/fotos-01.png" alt="foto de perfil" class="perfil"></a></li>        
                      
                 </ul>
             </nav>
+            <div class="menu-expansible" id="chocolatexpand">
+              <a href="#"><img src="img/mail.png" alt="1"></a>
+              <a href="#"><img src="img/fotos.png" alt="2"></a>
+              <a href="#"><img src="img/meet.png" alt="3"></a>
+              <a href="#"><img src="img/calendar.png" alt="4"></a>
+              <a href="#"><img src="img/drive.png" alt="5"></a>
+              <a href="#"><img src="img/play.png" alt="6"></a>
     </header>
-    
+ 
+    </div>
     <section>
         <img src="img/google-logo-png-transparent-background-large-new.png" alt="google Logo">
       
@@ -91,6 +99,17 @@ Argentina
 </div>
 </div>
     </footer>
+
+    <script>
+ let menuchocolat = document.getElementById('btn-chocolat')
+ let chocolatexpand = document.getElementById('chocolatexpand') 
+
+ menuchocolat.addEventListener('click', function() {
+  chocolatexpand.classList.toggle('active')
+ })
+
+   
+    </script>
 
    
 </body>
