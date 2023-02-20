@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--    App 100% Mobile
+    Imagen nada para hacer
+    boton +
+    apreto pop up 
+    simple page
+    se entrega URL link tree boton reton3
+    Miercoles 22 preentrega => 1er dia de Js práctico
+    Entrega Miercoles 8 de Marzo -->
+</head>
+    
+    
+<body>
+    <div class="container">
+        <div class="row">
+          
+                <ul class="menu-mobile">
+                    <li><span class="material-symbols-outlined">
+                        menu
+                        </span></li>
+                    <li>To do List</li>
+                    <li><span class="material-symbols-outlined">
+                        face_3
+                        </span></li>
+                </ul>
+        </div>
+
+        <section class="tareas">
+        <div class="row">
+            <div class="playbtn" id="to-do">
+                <img href="#" src="img/joytick.png" alt="boton en forma de joytick">
+                <h1 class="nothing" id="boring">Nada para hacer &#128528; </h1>
+            </div>
+        </div>
+        </section>
+
+<div class="btnend" id="btnplus">
+<img href="#" src="img/add_circle_FILL0_wght100_GRAD0_opsz48.svg" alt="boton con +">
+ </div>
+ </div>
+    
+ 
+ 
+    <script>
+        let btnAdd= document.getElementById('btnplus')
+        
+        let prueba= `<div class="centrado"> 
+       <div class="pop-uno" id="pop-uno"> 
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nombre de la Tarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+          </div>
+          <p> Tipo de Tarea</p>
+           <div class="input-group mb-3">           
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Selecciona...</option>
+              <option value="1">Personal</option>
+              <option value="2">Doméstica</option>
+              <option value="3">Entretenimiento</option>
+              <option value="3">Laboral</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripción de la Tarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="barra-prioridad">
+            <button type="button" class="btn-gris" id="btn-gris"></button>
+            <button type="button" class="btn-verde" id="btn-verde"></button>
+            <button type="button" class="btn-naranja" id="btn-naranja"></button>
+            <button type="button" class="btn-rojo" id="btn-rojo"></button>
+          </div>
+
+          <div class="botones">
+            <button type="button" class="cancelame-one" id="cancelame-one">Cancelar</button>
+            <button type="button" class="agregame-one" id="agregame-one">Agregar</button>
+          
+        </div>
+    </div>
+</div>
+          `
+
+        let modelo = `<div>${prueba}</div>`
+        let popone = document.getElementById('to-do')
+
+        btnAdd.addEventListener('click', function(){
+           // alert("ANDA")
+           popone.innerHTML = modelo
+
+        })
+
+
+    </script>
+
+</body>
+</html>
