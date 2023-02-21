@@ -37,7 +37,5 @@ textarea.innerHTML = descrip
 ficha.classList.add('active')
 modal.classList.add('ninguno')
 
-
-
 })
 
