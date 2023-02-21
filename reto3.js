@@ -3,6 +3,7 @@ let popone = document.getElementById('to-do')
 let modal = document.getElementById('sale')
 let ficha = document.getElementById('ficha')
 let agregar = document.getElementById('agregame-one')
+let cancelar = document.getElementById('cancelame-one')
 //// Esto es el value de Nombre de Tarea ///
 let nameTarea = document.getElementById('nomTarea')
 let titulo = document.getElementById('soyh2')
@@ -25,14 +26,32 @@ btnAdd.addEventListener('click', function(){
 
 })
 
+cancelar.addEventListener('click', function(){
+    modal.classList.add('ninguno')
+   
+
+})
 
 agregar.addEventListener('click', function(){
 let tipo =  nameTarea.value
 let selec = drop.value
 let descrip = txt.value
-titulo.innerHTML = tipo
-descripcion.innerHTML = "Mi tarea es del tipo " + selec
-textarea.innerHTML = descrip
+let title = document.createElement('h2')
+let  txth2= document.createTextNode(tipo)
+title.appendChild(txth2)
+titulo.appendChild(title)
+
+let dropping = document.createElement('h4')
+let  txth4= document.createTextNode("Mi tarea es del tipo: " + selec)
+dropping.appendChild(txth4)
+descripcion.appendChild(dropping)
+
+
+let areatexto = document.createElement('h6')
+let  txth6= document.createTextNode(descrip)
+areatexto.appendChild(txth6)
+textarea.appendChild(areatexto)
+
 
 ficha.classList.add('active')
 modal.classList.add('ninguno')
