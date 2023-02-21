@@ -78,7 +78,11 @@ color: #eb5c48;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 250px;
 }
+.nomTarea{
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
 
+}
 .barra-prioridad{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -153,3 +157,78 @@ border: 0px solid #cfd8dc;
     background-color: white;
 
 }
+
+.centrado{
+    display: none;
+}
+
+.ficha{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.ninguno{
+    display: none;
+}
+
+
+.ficha:active{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ficha{
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    background-color: #f4f7f9;
+}
+.texto{
+
+    width: 100%;
+}
+
+.listi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    padding: 5px;
+}
+
+.ficha h2{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #eb5c48;
+    font-weight: 800;
+    font-size: 30px;
+    margin-block: 0px;
+
+}
+
+.ficha h4{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #212121;
+     font-size: 15px;
+     padding-left: 3px;
+   
+}
+
+.ficha h6{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #434343;
+     font-size: 11px;
+     padding-left: 3px;
+    
+
+}
+
+
