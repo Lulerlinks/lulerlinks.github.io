@@ -36,6 +36,8 @@ li {
 }
 
 .playbtn{
+    z-index: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +70,8 @@ color: #eb5c48;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .pop-uno{
  
