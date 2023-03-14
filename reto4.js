@@ -6,12 +6,7 @@ let btnCalcu= document.getElementById('arecompati')
 let pantalla1 = document.getElementById('pantalla1')
 let pantalla2 = document.getElementById('espera')
 let pantalla3 = document.getElementById('principal')
-
-
-
-
-
-
+let placa = document.getElementById('placa')
 
 
 btnCalcu.addEventListener('click', () =>  {
@@ -67,22 +62,30 @@ let carta = [
  {imagen:'img/Sol', nombre:'Pluton', descr:'El Sol habla de núcleo real de la persona, el sí mismo interior, aquello que es de importancia central. También nos muestra la vitalidad general y la habilidad para auto afirmarse, describe la tonalidad general del ser que colorea todo lo demás. Signo equivalente: Leo'},
 ];
 
-let modelo = `<h1 id="titulo">${carta.nombre}</h1>
-<img class="imagen" src="${carta.imagen}" alt="carta" id="pic">
-<h2 id="descripcion">${carta.descr}</h2>
-<p id="bajada"></p>`
+let cartaimprimir = (min,max)=>{
+  return Math.round(Math.random()
+  )
+}
+
+console.log(cartaimprimir(0,24));
+console.log(carta[cartaimprimir(0,carta.length)].nombre)
+
+carta.map((signito) => {
+    let prueba1 ="<h1>" + signito.nombre + "</h1>";
+    placa.innerHTML += prueba1
+})
 
 function tiempoCarga(){
     pantalla2.style.display = 'none';
     pantalla3.style.display = 'block';
-    pantalla3.innerHTML = modelo
+    
    
 }
 
-let imprimircartas = (min,max)=>{
-    alert(carta[imprimircartas(0,carta.length)].nombre)
-}
 
-
+//let modelo = `<h1 id="titulo">${carta.nombre}</h1>
+//<img class="imagen" src="${carta.imagen}" alt="carta" id="pic">
+//<h2 id="descripcion">${carta.descr}</h2>
+//<p id="bajada"></p>`
 
 
