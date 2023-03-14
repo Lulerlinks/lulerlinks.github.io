@@ -19,7 +19,7 @@
     
     
 <body>
-    <div class="container">
+     <div class="container" id="contenedor">
         <div class="probando">
         <div class="row">
           
@@ -33,72 +33,72 @@
                         </span></li>
                 </ul>
           </div>
+
+
               
-          <div class="ficha" id="ficha">
-            <img src="img/list_Mesa de trabajo 1.png" alt="Icono de acompañamiento" class="listi">  
-            <div class="texto">
-              <h2 id="soyh2"></h2>
-            <h4 id="soyunh4"></h4>
-            <h6 id="soyunh6"></h6>
-            </div>
-          </div>     
+          <div class="centrado" id="sale"> 
+            <div class="pop-uno" id="pop-uno"> 
+
+               <div class="mb-3">
+                 <label class="form-label">Nombre de la Tarea</label>
+                 <input type="text" class="nomTarea" id="nombre-tarea" placeholder="Ingresar tarea">
+               </div>
+               <p> Tipo de Tarea</p>
+                <div class="input-group mb-3">           
+                 <select class="form-select" id="tipotarea" >
+                   <option selected>Selecciona...</option>
+                   <option value="Personal">Personal</option>
+                   <option value="Doméstica">Doméstica</option>
+                   <option value="Entretenimiento">Entretenimiento</option>
+                   <option value="Laboral">Laboral</option>
+                 </select>
+               </div>
+               <div class="mb-3">
+                 <label class="form-label">Descripción de la Tarea</label>
+                 <textarea class="form-control" id="areadetext" rows="3" placeholder="¿Qué tenemos que hacer?"></textarea>
+               </div>
+               
+               <div class="barra-prioridad" id="check">
+                <p>Prioridad</p>
+                 <input type="radio" value="1" class="2btn-gris" id="btn-gris" name="1">
+                 <input type="radio" value="1" class="btn-verde" id="btn-verde" name="1">
+                 <input type="radio" value="1" class="btn-violeta" id="btn-violeta" name="1">
+                 <input type="radio" value="1" class="btn-rojo" id="btn-rojo" name="1">
+
+               </div>
+        
+               <div class="botones">
+                 <button type="button" class="cancelame-one" id="cancelame-one">Cancelar</button>
+                 <button type="button" class="agregame-one" id="agregame-one">Agregar</button>
+               
+             </div>
+         </div>
+        </div>     
+        <div class="listadeTareas" id="listadeTareas"></div>
+     
         </div>
+        <div class="tareas">
+        <div class="playbtn" id="to-do">
+          <img href="#" src="img/joytick.png" alt="boton en forma de joytick">
+          <h1 class="nothing">Nada para hacer &#128528; </h1>
+      </div>
 
-        <div class="centrado" id="sale"> 
-          <div class="pop-uno" id="pop-uno"> 
-             <div class="mb-3">
-               <label for="exampleFormControlTextadsrea1" class="form-label">Nombre de la Tarea</label>
-               <input type="text" class="nomTarea" id="nomTarea">
-             </div>
-             <p> Tipo de Tarea</p>
-              <div class="input-group mb-3">           
-               <select class="form-select" id="inputGroupSelect01">
-                 <option selected>Selecciona...</option>
-                 <option value="Personal">Personal</option>
-                 <option value="Doméstica">Doméstica</option>
-                 <option value="Entretenimiento">Entretenimiento</option>
-                 <option value="Laboral">Laboral</option>
-               </select>
-             </div>
-             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label">Descripción de la Tarea</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-             </div>
-             
-             <div class="barra-prioridad">
-              <p>Prioridad</p>
-               <button type="button" class="btn-gris" id="btn-gris"></button>
-               <button type="button" class="btn-verde" id="btn-verde"></button>
-               <button type="button" class="btn-naranja" id="btn-naranja"></button>
-               <button type="button" class="btn-rojo" id="btn-rojo"></button>
-             </div>
-   
-             <div class="botones">
-               <button type="button" class="cancelame-one" id="cancelame-one">Cancelar</button>
-               <button type="button" class="agregame-one" id="agregame-one">Agregar</button>
-             
-           </div>
-       </div>
-   </div>
-
-
-        <section class="tareas">
-        <div class="row">
-            <div class="playbtn" id="to-do">
-                <img href="#" src="img/joytick.png" alt="boton en forma de joytick">
-                <h1 class="nothing">Nada para hacer &#128528; </h1>
-            </div>
-        </div>
-        </section>
-
-
-
+    </div>  
 <div class="btnend" id="btnplus">
 <img href="#" src="img/add_circle_FILL0_wght100_GRAD0_opsz48.svg" alt="boton con +">
  </div>
  </div>
-    
- 
+ <div class="cont" id="cont">  
+ <div class="ficha" id="ficha">
+  <img src="img/list_Mesa de trabajo 1.png" alt="Icono de acompañamiento" class="listi">  
+  <div class="texto">
+    <h2 id="soyh2"></h2>
+  <h4 id="soyunh4"></h4>
+  <h6 id="soyunh6"></h6>
+  </div>
+  </div>
+</div>     
+</div>  
  
     <script src="reto3.js"></script>
 

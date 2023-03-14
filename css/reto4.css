@@ -1,0 +1,157 @@
+
+body{
+    background-color: #212121;    
+    color:white;
+    font-family: 'Raleway', sans-serif;
+  
+    
+
+}
+.combo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo{
+    font-size: 27px;
+}
+
+.imagen{
+  width: 80%; 
+ 
+}
+#descripcion{
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+#bajada{
+    font-family: 'Raleway';
+    font-weight: 500;
+
+}
+.pantalla3{
+    display:none;
+
+}
+.pantalla2{
+    z-index: 1;
+    display: none;
+    background-color: black;
+    height: 100vh;
+  
+}
+.pantalla2 img{
+    display: flex;
+    width: 100%;
+   align-content: center;
+   align-items: center;
+   background-color:black; 
+   padding-top: 40%;
+
+}
+
+
+.pantalla1{
+   display: block;
+    z-index: 0;
+}
+
+.up-star{
+    width:30%;
+    display: block;
+    float: right;
+    padding-bottom: 40px;
+    
+       
+}
+
+.logo{
+    display: flex;
+     width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.laposta{
+  font-size: 28px;
+  padding: 0px 10px; 
+  font-weight: 500; 
+    
+}
+
+.moon-right{
+    transform: scaleX(-1);
+    width: 40px;
+    height: 40px;
+}
+.moon-left{
+    width: 40px;
+    height: 40px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+label{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+}
+.j-uno{
+      display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+ 
+}
+
+input{
+    width: 220px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #212121;
+    border: 1px solid #b9d8f9;
+    padding-left: 5px;
+    color: white;
+  
+    
+}
+.j-dos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+button:hover{
+    background-color:#b9d8f9;
+
+}
+
+.down-star{
+    padding-top:40px;
+    width:30%;
+     float: left;
+   
+}

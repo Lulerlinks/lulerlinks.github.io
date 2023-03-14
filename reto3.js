@@ -1,76 +1,64 @@
 let btnAdd= document.getElementById('btnplus')
 let sintarea = document.getElementById('to-do')
 let modal = document.getElementById('sale')
-let ficha = document.getElementById('ficha')
+let ficha = document.getElementById('listadeTareas')
 let agregar = document.getElementById('agregame-one')
 let cancelar = document.getElementById('cancelame-one')
+let pop = document.getElementById('pop-uno')
+let check = document.getElementById('check')
+let cont = document.getElementById('cont')
 //// Esto es el value de Nombre de Tarea ///
-let nameTarea = document.getElementById('nomTarea')
-let titulo = document.getElementById('soyh2')
+let nameTarea = document.getElementById('nombre-tarea')
+
 //// Esto es el value de dropdown ///
-let drop = document.getElementById('inputGroupSelect01')
-let descripcion =  document.getElementById('soyunh4')
+let drop = document.getElementById('tipotarea')
+
 //// Esto es el value de Descripcion de Tarea ///
-let txt = document.getElementById('exampleFormControlTextarea1')
-let textarea =  document.getElementById('soyunh6')
+let txt = document.getElementById('areadetext')
+
+let blue = document.getElementById('btn-gris')
+let green = document.getElementById('btn-verde')
 
 btnAdd.addEventListener('click', function(){
    // alert("ANDA")
 modal.classList.add('active')
- 
 })
 
-btnAdd.addEventListener('click', function(){
-
-    sintarea.classList.add('ninguno')
-
-})
-
-cancelar.addEventListener('click', function(){
-    if(ficha=='active'){
-  alert('ficha ta activa') 
-    } else{
-    sintarea.classList.remove('ninguno')
-    modal.classList.remove('active')
-    }  
-   
+cancelar.addEventListener('click', () => {
+ if (sintarea.disabled = true){
+   modal.classList.remove('active')
+ } else {
+   sintarea.classList.add('ninguno')
+ }
 
 })
 
-agregar.addEventListener('click', function(){
-let tipo =  nameTarea.value
-let selec = drop.value
-let descrip = txt.value
+agregar.addEventListener('click', () => {
+let fichadoble = `<div class="cont" id="cont">
+<img src="img/list_Mesa de trabajo 1.png"
+alt="Icono de acompañamiento" class="listi">  
+<div class="texto">
+<h2 id="soyh2">${nameTarea.value}</h2>
+<h4 id="soyunh4">${drop.value}</h4>
+<h6 id="soyunh6">${txt.value}</h6>
+</div>
+</div>
+` 
 
-//let fichadoble = `<div class="ficha" id="ficha">
-  //                  <img src="img/list_Mesa de trabajo 1.png" alt="Icono de acompañamiento" class="listi">  
-    //                <div class="texto">
-      //              <h2 id="soyh2">${tipo}</h2>
-        //            <h4 id="soyunh4">${selec}</h4>
-          //          <h6 id="soyunh6">${descrip}</h6>
-            //    </div>
-              //  </div>`  
-//ficha.innerHTML += fichadoble                
-
-let title = document.createElement('h2')
-let  txth2= document.createTextNode(tipo)
-title.appendChild(txth2)
-titulo.appendChild(title)
-
-let dropping = document.createElement('h4')
-let  txth4= document.createTextNode("Mi tarea es del tipo: " + selec)
-dropping.appendChild(txth4)
-descripcion.appendChild(dropping)
-
-let areatexto = document.createElement('h6')
-let  txth6= document.createTextNode(descrip)
-areatexto.appendChild(txth6)
-textarea.appendChild(areatexto)
-
-
+ficha.innerHTML += fichadoble              
 modal.classList.remove('active')
-ficha.classList.add('active')
+sintarea.classList.add('ninguno')
+nameTarea.value=' '
+drop.value=' '
+txt.value=' '
+})
 
+blue.addEventListener('click' ,()  => {
+  ficha.classList.add('pop-blue')
 
 })
 
+green.addEventListener('click' ,()  => {
+  ficha.classList.add('pop-green')
+
+})
