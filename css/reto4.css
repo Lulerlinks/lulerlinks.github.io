@@ -11,14 +11,42 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  justify-content:right;
+}
+
+h2{
+    padding-top: 20px;
+    font-size: 18px;
+    padding-left: 15px;
 }
 
 #titulo{
     font-size: 27px;
 }
+.img-astro{
+     width: 80%;
+     padding-left: 85px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+ }
+
+h5{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+ 
+p{
+    text-align: center;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+    
 
 .imagen{
   width: 80%; 
@@ -116,6 +144,7 @@ label{
     align-items: center;
  
 }
+
 
 input{
     width: 220px;
