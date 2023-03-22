@@ -46,8 +46,18 @@ p{
     margin: 0px 15px;
     font-size: 14px;
 }
-    
+#result{
+    margin-right: 15px;
+}
 
+.btns-finales{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 40px;
+
+
+}
 .imagen{
   width: 80%; 
  
